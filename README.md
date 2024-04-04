@@ -1,4 +1,4 @@
 # GPTs
 
 Nomadcoder Overall AI Project Archive
-Nickname: ChessABC
+\n Nickname: ChessABC
