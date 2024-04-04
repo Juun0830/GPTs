@@ -89,7 +89,7 @@ st.title("⭐️RAG Challenge⭐️")
 api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 
 if api_key:
-    OPENAI_API_KEY = f"{api_key}"
+    openai_api_key = f"{api_key}"
 	
     llm = ChatOpenAI(
     temperature=0.1,
