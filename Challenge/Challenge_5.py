@@ -91,7 +91,7 @@ api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 if api_key:
 	
     import os
-    OPENAI_API_KEY=os.getenv(f"{api_key}")
+    openai.api_key = os.getenv(f"{api_key}")
 
     llm = ChatOpenAI(
 		temperature=0.1,
