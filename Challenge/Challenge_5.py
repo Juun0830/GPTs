@@ -16,7 +16,7 @@ from langchain.storage import LocalFileStore
 from langchain.memory import ConversationBufferMemory
 
 # Chat
-import openai
+from openai import OpenAI
 from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough,RunnableLambda
@@ -90,7 +90,10 @@ api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 
 if api_key:
 	
-    openai.api_key = f"{api_key}"
+    import os 
+    client = OpenAI(
+		api_key=os.environ.get(f"{api_key}"),
+		)
 
     llm = ChatOpenAI(
 		temperature=0.1,
