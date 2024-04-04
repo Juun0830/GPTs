@@ -93,8 +93,8 @@ if api_key:
 
     llm = ChatOpenAI(
 		penai.api_key=f'{api_key}',
-		temperature=0.1,
-	)
+		temperature=0.1
+		)
 
     st.sidebar.markdown("### GitHub Repository")
     st.sidebar.markdown("[GitHub Repo Link](https://github.com/Juun0830/GPTs)")
