@@ -1,2 +1,4 @@
 # GPTs
-Overall AI Project Archive
+
+Nomadcoder Overall AI Project Archive
+Nickname: ChessABC
