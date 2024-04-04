@@ -28,6 +28,7 @@ import streamlit as st
 # Function
 @st.cache_data(show_spinner="Embedding file..")
 def embed_file(file):
+	openai.api_key=f'{api_key}'
 	file_content = file.read() 
 	file_path = f"./Challenge/Challenge_files/{file.name}"
 	with open(file_path, "wb") as f: 
