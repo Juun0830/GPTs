@@ -21,10 +21,6 @@ from langchain.chat_models import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 from langchain.schema.runnable import RunnablePassthrough,RunnableLambda
 
-llm = ChatOpenAI(
-    temperature=0.1,
-)
-
 #Interface
 import streamlit as st
 
@@ -94,6 +90,10 @@ api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 
 if api_key:
     OPENAI_API_KEY = f"{api_key}"
+	
+    llm = ChatOpenAI(
+    temperature=0.1,
+	)
 
     st.sidebar.markdown("### GitHub Repository")
     st.sidebar.markdown("[GitHub Repo Link](https://github.com/Juun0830/GPTs)")
