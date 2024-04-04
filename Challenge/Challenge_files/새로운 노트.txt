@@ -1,0 +1,438 @@
+﻿새로운 노트
+2024.01.31 수 오후 5:29 ・ 44분 9초
+최지훈
+
+
+참석자 1 00:12
+Yes thank you thank you. It's very impressive.
+I'm particularly interested by your model that is capturing the chemical formula from the images.
+And we have such a system in patents group but it was developed pre the machine learning phase and the effectively the rate of recognition is quite bad and if we could cooperate to improve it in the future, it would be great for us.
+Thank you.
+
+참석자 2 00:47
+So we have 8 billion model, 25 billion models.
+So also we have the large model for common purpose but our Brocus is based on a small model with specific domains spec data set like patent.
+So we to support pattern screening or pattern analysis we have two model one BM model to understand the unstructured data set like testable table or a chart.
+Another model is to understand the description of the patent technology or
+
+참석자 2 01:21
+you know, some part of patent document and we are researching how to combine this model to give an insight over soilization of this patent to patent teams in the company.
+But in summary, we have large language body part.
+The second part is the Vigan model.
+Maybe we are finding some use cases how to use this model or a separate model to support the pattern of
+
+참석자 3 02:06
+we must say it's quite impressive the job you have done.
+So congratulation for that.
+I, I will jump in in the LLM part because it's an area that we are currently exploring.
+Andrew, Daniel and Michel please jump in but we when you say you created pattern specific LLM or general language LLM is some information you can share with us about the amount of data you provided as inputs.
+So the training data and second, the tool that you used.
+
+참석자 3 03:00
+The third is more or less the amount of GPU you used to create such a specific element
+
+참석자 2 03:20
+in some way you know, data was provided KO people are provided specific and processed data set for patent documents and then our side is collected a common data set.
+We can share the list of data we fed into the foundation model.
+
+참석자 2 03:55
+So I believe I believe that the infrastructure required to run the train is more than very small.
+
+참석자 2 04:11
+So the time to train this model was less than 6 months including a quality check or validation evaluation.
+
+참석자 3 04:30
+I said I might misunderstood you, you trained for 6 months in what kind of GPU
+
+참석자 4 04:48
+collecting the data and process it.
+The total period of the project is actually was 6 months around
+
+참석자 2 05:00
+methods including training data and reporting to a stakeholder and evaluating the trained data set.
+So we're using TPU Bree for training.
+So now this was not yet introduced in real world just we did the research level project.
+So under the partnership with the Kaport, we are talking about how to ground this air model in the real world but this is a future plan that cannot lead.
+
+참석자 2 06:03
+Building this model is one from processing data to saved round infrastructure
+
+참석자 4 06:30
+if I might just ask out of curiosity only if you can say or not.
+So when you're training the model, I suspect you probably trained using some sort of general language modeling function to start with.
+Then did you then later fine tune on perhaps like a chat based task or a upper
+
+참석자 2 07:12
+probably the best model is to collect processing instruction data set and fine tune data set.
+So for doing this job, we must understand the very specific and useful requirement of end user.
+Considering this issue, we built our own.
+Can you see that
+
+참석자 2 07:56
+it's very essential because that without understanding a potential needs instruction data set, train data never
+
+참석자 2 08:27
+at this workshop the 7 days including two or three days offline workshop page one is understand the US journey to do their looting job and pay too to understand how to AI can solve their hidden potential problem.
+We're going to suggest more than 30 AI technology in the right side we're going to put the sticker to show the user problem and how to link how to, how to make combination and technologies and usuge problem.
+And then finally the last day we're going to build mockup protype
+
+참석자 2 09:15
+to validate the conceptual A service with a program.
+This is 7 days workshop I would like to have a WO this is one of output this framework.
+The first law you can see the category of your journey well, another second part how to make what type of step I included in each category of your journey and then each step include the explanation, a stakeholder involved with this step and painpoint a nich
+
+참석자 2 09:51
+and we're going to build this new journey map including painpoint solution and your model to sort out the problem you just had.
+
+참석자 2 10:09
+So with this prototype is a very good tool to understand and to validate the concept of this a technolog you know, technology itself is not important.
+Just understanding US requirement is essential but in terms of technology, it's very important to build the fction of a fine tuning data set to build a well maded model for futures
+
+참석자 4 10:33
+out of curiosity only if you can say well so would you expect the client to already have an instruction instruction tuning data set?
+Or could you build automatically build an instruction tuning data set?
+Or, and, or do you have a framework to allow someone to easily create an instruction finding data set via some sort of like human in the loop AI system?
+
+참석자 2 11:03
+Yeah yeah yeah
+
+참석자 2 11:20
+to make tuning data set because they are not engineered.
+So we're going to provide a structure, a sample tuning data set and the first step is to collect data set in 30 or less than 15 heir data set for fine tuning such data set and our team will guide this tuning data set is good or not for training.
+It's very well organized in our research center C still data said we did more than 10 projects per April medes this for all building other than water
+
+참석자 4 12:04
+Okay that's really interesting Frenchy for share great presentation Frank you very much.
+
+참석자 2 12:16
+Can I resent your strategy with Worldbamp for AI
+
+참석자 3 12:28
+We are very humble in comparison to your team because we are only 7 persons.
+So
+
+참석자 3 12:45
+if I can share my screen, I can quickly show you some P open slides on our activities then leave some space afterwards for discussion on the areas of collaboration.
+So I try to share my screen.
+It's quite difficult exercise to summarize it in a few minutes.
+Yeah. So do you see my screen?
+I do want your screen to slide.
+Yeah
+
+참석자 3 13:32
+quickly showing you some slides because I was with we did not really prepare because I don't know how much time I have.
+So this is quickly our team.
+So we are quite humble in the sense we are 8 persons working in machine transition, in image and in speech.
+And so the good news we are waiting for a chernmid to join us who has some she reads a Korean.
+So that's good news for us because as you know, Korean, Chinese, Japanese are very important languages in our team.
+
+참석자 3 14:19
+I can join your team. So our activities are in text, in image and in speech.
+So speech because speech is not related really to your area but we, we have a speech to text so we automatically recognize texts in the WIPO meetings and we can automatically generate a transcript out of that.
+So that's a speech activities and we have two persons working on that.
+I could demo it but it's a bit out of context.
+So but that's one aspect of our tool an,
+
+참석자 3 15:12
+so in our I would say main activity is around text processing.
+So we have WIPO translate.
+WIPO translate is our kind of historical activities.
+So it's something that we started early some 12 years ago.
+So it's a bottom it's really machine learning, machine translation.
+So we switched to neural network machine translation and we were early adopters of this technology because we published it.
+It was publicly available just five days after Google.
+So we
+
+참석자 3 15:58
+as early as 2016, we were among the first to release a publicly available neural machine translation.
+And this is available in all the 10 PCT languages.
+So of course obviously including Korean is an important language and we trained it ourselves on our own data.
+And recently for example, we published a white P translate and which can translate directly from Korean into Japanese from Korean into Chinese, Chinese into Japanese all the CGK direct models that we call them
+
+참석자 3 16:43
+and which provides better, more accurate translation than pwotting through English which is usually the case.
+So Wipot transit is available on patent Scope everybody can access it and we do translate on the flight description claims provide a PCT fate which is the automatic translation of the publication of the PCT all in English for now maybe other languages in the future.
+So that's one part of our activity why put translate?
+And we have also a big activity around images.
+
+참석자 3 17:29
+So image we do image classification so mainly trademarks but we plan also to release very soon industrial design classification tools we will improve in the future.
+And we using this automatic classification of image, we can do image similarity, automatic image similarity.
+So being able to look for a trademark using a logo I mean we, we provide an image and we look at similar image in the database and this is available as part of the Google.
+
+참석자 3 18:24
+This is a bit new. We are also working on providing Llms so access to a generative AI protects so it's only the initial process but we will, we are investigating the use of LMS and the use of LMS probably on premise meaning not using external tools or on the cloud or not using CHCHIPI but having our own internal ELE
+
+참석자 2 19:11
+in some domestic because you know, there are many companies or institution like WIPO it's very sensitive for the data you know, they are released in public so we understand very well your challenges.
+
+참석자 3 19:30
+Yes. So we've faced this issue for machine translation since the beginning because our tool for machine translation is not only used public I means not only use on patent scope for the general public because on patent scope it's published information so it could be okay to use external services but we use it also internally.
+So in the PCT transmission service they are translating only exclusively confidential information because they do translate patent publication before publication.
+
+참석자 3 20:15
+So we got quite a long experience in using on premise because exactly of this confidentiality issues.
+Yeah
+
+참석자 2 20:25
+in case of that, a large size model on premise on premise is not visual right thing because you know that a running big side model need a very high cost so that I guess a small slide model with a domain specific data set will be visible.
+
+참석자 3 20:55
+So I don't know if there is some parts you would like us to demo
+
+참석자 3 21:09
+when you showcase your document analyzer.
+We are also working on image segmentation.
+That's a new project where we take a 4 image containing different drawings and the goal is to automatically split those drawings into individual images.
+So something similar to what you, you showcase but it's not really a proper document analyzer.
+It's more a image segment tool that we use.
+
+참석자 2 21:49
+Yeah well, actually before joining this meeting, I visited your service for finding imagy in terms of similarity but it looks like this service work fairly well.
+So do you have any challenges problem you have for finding similar images for this service?
+
+참석자 3 22:16
+Oh yeah there are a lot of challenges of course but we like the challenges
+
+참석자 3 22:31
+for trademark images. The challenges are enormous but we keep an eye on the existing state of the art technologies.
+But as you perfectly know, the way to represent an image internally and look for similar images is changing every year or every 6 months.
+So we have always to to index all PNT images and look for similar images on one of the one of the challenge is how to evaluate our similarity tool.
+I think that's something you also face.
+We can build an image similarity tool but how to evaluate
+
+참석자 3 23:29
+the accuracy of such a similarity tool especially when we have a database of millions of images.
+How can we be sure that the similarity of my image is accurate in comparison to one million other images?
+And especially to evaluate the recall do I miss some images?
+That's the most difficult part.
+So that's one of the many challenge in the image similarity
+
+참석자 3 24:10
+about our, the generative AI and current roadmap we plan to have also internal generative AI for the time being it's a very general purpose so we do not fine tune but we've got a long term plan to be able to fine tune the, our LM, internal LLM or towards patent or at the very least towards IP knowledge.
+
+참석자 2 24:52
+So my team is looking into three things.
+The first one is how to collect processing license free data set.
+The second one is data compliance.
+We have more than 20 cases in terms of data you know compliance you know first index is data license.
+Also second index is modile license in terms of open, semi open in just public but not private data is data sets three or just commercial not using commercial but there are different set index.
+
+참석자 2 25:43
+So if we combine this data compliance category or model type of category, we can make more than early cases are for reviewing the compliance issue
+
+참석자 2 26:10
+it must be the first step to build a tuning data set.
+
+참석자 3 26:19
+This is very, very important information because not going into ethics or AI ethics ET cetera or being WIPO for us it would be nice or would be important to have a generative AI which is trained only on non copulated data.
+But as you know, it's overly complicated to ensure that LLM unless we train ourselves.
+That's what we do for machine transession for example we master completely the data which went only on published applications.
+But for the general Tv, that's another challenge
+
+참석자 1 27:05
+for HI we are too small to train by ourselves for the government we don't have the capacity we don't have the, we cannot procure the training data we don't have access to the GPUs.
+So yeah, we are just experimenting with OS elems produced by other entities
+
+참석자 2 27:45
+use cases our AI technology, LM or VISM model can provide benefit for you guys.
+So just guess what would be the area with top priority for using you know, generative AI technology what do you think about for rifle or
+
+참석자 1 28:11
+for patents group? I am very interested by your technology to generate tables from images and also your technology to generate chemical compounds from images.
+We have been alsoing the PCT applications from 1978 so it's four million documents in 10 publication languages and when we do that, all the tables they are kept as images because up to now we did not have the capacity to transform his tables
+
+참석자 1 28:51
+into searchable devils into structural data.
+And I see that you are doing that.
+So I will be very, very interested to know about your progress to know about the accuracy and of course to decide in the future if we could use the car technology for the PC applications.
+
+참석자 2 29:10
+Yeah good good, good good good good idea because from building a model to understand table and convol table data set to a searchable structural data set is very has top priority research agenda we have actually we are looking for some it's a specific area PATRUM I mean that table time is very different in terms of industry or purpose.
+For example, table type of table in patent data that is a little bit different in chemistry or other structure.
+Yeah
+
+참석자 2 29:46
+so understand that these use cases or type of table or mainly included in patent or other cases.
+So for, to solve out this problem, pship is most.
+Pstroship is very important.
+I think
+
+참석자 2 30:12
+what I would like to suggest is to have a workshop to understand your potential needs.
+And second step is to what type of data type table what type of data in table must be translated convosed in structured data sets and other one is how to what you cases using this structural table data searchable table data
+
+참석자 2 30:47
+in terms of really only using AI.
+
+참석자 1 30:51
+Yeah I can give you some P ideas about the use cases in patent scope we index the full text, the text of the applications but we miss the texts which are in the tables.
+So the first, very simple thing would be to extract from all the tables the list of cells and for each cells you would have the text and then we will put that into the solar engine for certes.
+So we could also define some fields to search specifically into tables.
+
+참석자 1 31:23
+So in fact, we would improve the sociability of patent applications in patent group with such a technology.
+
+참석자 2 31:31
+I think it's mostly challenging jobs but mostly challenging most to do it'll be very impact.
+
+참석자 2 31:49
+You are coming out for agenda and the partnership or collaboration.
+
+참석자 1 31:53
+Well, at LMS for sure it's an interesting avenue for development for us.
+We don't have the capacity so we could benefit of your experience or your help.
+Of course our initial idea was to deploy at WIPO internally one kind of EM to expose the prompting functionality to our staff and to all the different divisions at WIPO so that we could also get use cases in return of this exposure to try to understand what
+
+참석자 1 32:28
+we could do in the world of AP with LMS in the future.
+So this is what we are doing right now but effectively having LMS that we could really use in production where we know for example, that the training data has not copyrighted material in that's very important for WIPO and also domain specific items on patent texts
+
+참석자 1 33:00
+improve prior art searching in the future.
+This could improve patent drafting.
+So we could effectively at WIPO leverage this technology to improve the IP system WorldWide.
+But this is a long term and very vague idea for the moment because we don't have the experience with things right now.
+
+참석자 2 33:22
+Maybe if we have a partnership we can share our experience but you must invest our GPU CiRC
+
+참석자 1 33:34
+the biggest problem we have a very small entity in WIPO which is also a relatively small organization.
+So
+
+참석자 1 33:51
+to acquire or to lease the require
+
+참석자 1 34:08
+Yeah just in France just to give you an idea on how small we are we tried in the last Viennum to buy one machine with 8 800 Gpgpus and we sailed.
+So we don't have a machine, even one machine at Wipo.
+
+참석자 1 34:45
+Yes, we have done some experiments with SCRIP already and so one idea was to generate textual description of trademarks to add a new way of searching trademark similarity by describing the image in text and by comparing the text and billings and doing a similarity with that which would be different than with digital transformers.
+Again, we are small so we are waiting for probably a new fellow or a new intern to come to help us with that.
+
+참석자 1 35:22
+It's enough plans to do in the future but apparently you also did it already.
+Yeah that's where we are for the thinking about about next images
+
+참석자 1 35:49
+for these cases. Yes because we have access to an open source for description and images.
+
+참석자 2 35:59
+I understand that you are using open source model to build to make indexing or description of the image right I, it's been a tough job I think I guess.
+Yeah it would be very tough because using open source model for building index or description data for each image or local brand data right
+
+참석자 1 36:26
+Yes Yes yes that's your name
+
+참석자 2 36:29
+maybe it'll be a very manual intensive job.
+I think
+
+참석자 1 36:34
+no no, no as I said, we have a training that are set already for that.
+
+참석자 2 36:45
+WIPO can shell the parent image data set with description or indexing to with NI we can quickly training.
+I'm sorry we can quickly fine tuning our, this image to text model to validate our proproblems.
+
+참석자 1 37:05
+I agree that could be a second idea of projects where we could cooperate.
+Yes I fully agree.
+
+참석자 2 37:16
+Until now I found two things in terms of collaboration or project.
+First one is understanding tabular data in table table data set or a structure data set in patent.
+The second one is
+
+참석자 1 37:40
+text understand what the chemical structures, chemical structures and chemical modifies from chemical structures.
+There is also something which is very, very challenging which is to automatically detect from chemical documents Markoh structural do you know what?
+Much?
+
+참석자 4 38:05
+Yeah I mean that's, yeah that's one of the case that we've been working on but it's really hard to solve.
+There is really no linkage information between image to the table.
+So yeah we've been working on it.
+Yeah
+
+참석자 1 38:24
+yeah that's a very, very ambitious project.
+We have a Macush solution in Patenskop but we license the data.
+That is to say we use the data that is created by a company called Clarbate.
+We pay for the data and we have the, but when we did this project, it was five years ago.
+We investigated at that time if we would be able to generate NACU structures from patents and at that time it was not easy to do that.
+It could have required a lot of human proof reading and you know, chemists
+
+참석자 1 39:05
+validating the output of the systems.
+So we gave them and we bought the data from climate.
+
+참석자 4 39:27
+Yeah one of the big challenges we face is we could not really gather the data.
+We cannot really transform from the image to how we so we know how to connect it but we don't have the data so we could not the data to connect.
+So if we could get some information from you, it would be really helpful.
+We may be able to solve the problem together.
+
+참석자 1 39:49
+What I would suggest that maybe it's a bit bold is that we could reach out to Clarivate because I cannot give you the data from CLARIV because this is a licensed data but it's something maybe I can introduce you to them and that would be a very interesting things to look in the future because it's a bad question.
+ACUS is very important for the patent community, especially for the companies in the clinical world.
+
+참석자 1 40:23
+And still it's a very difficult thing to do and the software is complex and very expensive to license.
+
+참석자 2 40:42
+I guess you have processed the data set to train a model with no
+
+참석자 1 40:48
+no, we don't train. We use a solution Marcus search solution that is licensed to us by a chemical company.
+
+참석자 1 41:02
+Don't do machine learning there but in patent scope, if you create an account, you have access to must search.
+
+참석자 2 41:12
+Okay I see, I see okay but anyways, I found some common purpose democracy.
+It's this year's big high priority research agenda.
+We have democracy understanding anyway let's find how to collaborate for solving this problem.
+
+참석자 5 41:48
+More than one hour 10 minutes have passed.
+So is there anyone who would like to speak now?
+I think okay I think this first meeting, I think was very useful and beneficial for all of us.
+I think so we can understand each other and we could explore future maybe possibility of cooperation.
+So maybe I'm not sure how we can go forward.
+Maybe Mr PARK You can coordinate or if you want me to coordinate our yeah for future reduction I'm here to help you.
+So
+
+참석자 2 42:34
+who's going to focal person from your side?
+
+참석자 5 42:38
+What do you think? Christoloph
+
+참석자 5 42:54
+Any party wants me to be involved?
+Please let me know. I'm always available for your cooperation.
+So Mr P You can also contact me anytime.
+
+참석자 2 43:06
+Are you guys based on Geneva?
+Okay good I'm looking forward to meeting person in March or oh, March right because you know that I'm scheduling to visit a basel to meet the grocer and nobody.
+So I can, I can schedule the meeting your teams to have a cleat workshop Famew to understand your potential needs.
+
+참석자 2 43:37
+Yeah too.
+
+참석자 5 43:39
+Okay
+
+참석자 2 43:42
+next week I'm going to send an email wrapping up what we talk and what is next action for our collaboration and then along with questions to understand.
+Well, okay good
+
+참석자 5 44:00
+okay Thank you very much everyone thank you for today.
+
+
+clovanote.naver.com
