@@ -92,9 +92,9 @@ api_key = st.sidebar.text_input("Enter your OpenAI API Key:", type="password")
 if api_key:
 
     llm = ChatOpenAI(
-		penai.api_key=f'{api_key}',
+		openai_api_key=f'{api_key}',
 		temperature=0.1
-		)
+	)
 
     st.sidebar.markdown("### GitHub Repository")
     st.sidebar.markdown("[GitHub Repo Link](https://github.com/Juun0830/GPTs)")
