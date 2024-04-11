@@ -14,6 +14,7 @@ st.set_page_config(
     page_icon="📃",
 )
 
+summary_tab, qa_tab, note_tab = st.tabs(["Summary","QA", "Note"])
 
 class ChatCallbackHandler(BaseCallbackHandler):
     message = ""
@@ -41,10 +42,10 @@ llm = ChatOpenAI(
 @st.cache_data(show_spinner="Embedding file...")
 def embed_file(file):
     file_content = file.read()
-    file_path = f"./.cache/files/{file.name}"
+    file_path = f"./cache/files/{file.name}"
     with open(file_path, "wb") as f:
         f.write(file_content)
-    cache_dir = LocalFileStore(f"./.cache/embeddings/{file.name}")
+    cache_dir = LocalFileStore(f"./cache/embeddings/{file.name}")
     splitter = CharacterTextSplitter.from_tiktoken_encoder(
         separator="\n",
         chunk_size=600,
@@ -97,43 +98,43 @@ prompt = ChatPromptTemplate.from_messages(
     ]
 )
 
+with qa_tab:
+    st.title("DocumentGPT")
 
-st.title("DocumentGPT")
+    st.markdown(
+        """
+    Welcome!
+                
+    Use this chatbot to ask questions to an AI about your files!
 
-st.markdown(
+    Upload your files on the sidebar.
     """
-Welcome!
-            
-Use this chatbot to ask questions to an AI about your files!
-
-Upload your files on the sidebar.
-"""
-)
-
-with st.sidebar:
-    file = st.file_uploader(
-        "Upload a .txt .pdf or .docx file",
-        type=["pdf", "txt", "docx"],
     )
 
-if file:
-    retriever = embed_file(file)
-    send_message("I'm ready! Ask away!", "ai", save=False)
-    paint_history()
-    message = st.chat_input("Ask anything about your file...")
-    if message:
-        send_message(message, "human")
-        chain = (
-            {
-                "context": retriever | RunnableLambda(format_docs),
-                "question": RunnablePassthrough(),
-            }
-            | prompt
-            | llm
+    with st.sidebar:
+        file = st.file_uploader(
+            "Upload a .txt .pdf or .docx file",
+            type=["pdf", "txt", "docx"],
         )
-        with st.chat_message("ai"):
-            chain.invoke(message)
+
+    if file:
+        retriever = embed_file(file)
+        send_message("I'm ready! Ask away!", "ai", save=False)
+        paint_history()
+        message = st.chat_input("Ask anything about your file...")
+        if message:
+            send_message(message, "human")
+            chain = (
+                {
+                    "context": retriever | RunnableLambda(format_docs),
+                    "question": RunnablePassthrough(),
+                }
+                | prompt
+                | llm
+            )
+            with st.chat_message("ai"):
+                chain.invoke(message)
 
 
-else:
-    st.session_state["messages"] = []
+    else:
+        st.session_state["messages"] = []
